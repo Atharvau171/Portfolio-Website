@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="/Users/atharvasanjayuttarwar/Desktop/IYF/Portfolio/css/materialize.min.css" media="screen,projection"> -->
+    <style>
+        .html {
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            padding: 100px 20px;
+            min-height: 100vh;
+        }
+    </style>
+  <style>
+        body {
+            /* Fallback color for older browsers */
+            background-color: #05017e; 
+            
+            /* The gradient background */
+            background-image: linear-gradient(180deg, #0b0284, #080134, #06001e);
+            
+            /* Prevents the gradient from repeating if the page has little content */
+            background-attachment: fixed; 
+            
+            /* Ensures the background covers the entire window height */
+            margin: 0;
+            height: 100vh; 
+        }
+
+        
+    </style>
+
+</head>
+
+<body style="">
+
+    <div class="navbar-fixed ">
+
+        <nav class=" white-text navbar navbar-scrolled" style="background-color: transparent; transition: background-color 0.4s ease, padding 0.4s ease; " id="mainNav">
+
+            <div class="scroll-progress-bar"></div><!-- sroll bar -->
+            <div class="nav-wrapper ">
+                <!-- icon for mobile screen -->
+                 
+                <!-- <a href="#" data-target="mobile-menu" class="sidenav-trigger hidden"><i class="material-icons right">menu</i></a> -->
+
+                <a href="index.html" class="brand-logo ">@ Athrava Uttarwar </a>
+                <!-- Desktop -->
+                
+
+                <ul class="right hide-on-med-and-down ">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#education">education</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#achievements">achievements</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- mobile view -->
+    <!-- <ul class="hide-on-large-only" id ="mobile-menu">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#education">education</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#achievements">achievements</a></li>
+                        <li><a href="#contact">contact</a></li>
+         </ul> -->
+
+    <div style="padding-left: 7%; padding-right: 7%;">
+        <!-- home section -->
+        <section id="home" class=" lighten-4">
+            <div class="row valign-wrapper" style="margin-bottom: 0%; height: 100vh;">
+                <div class=" col s12 m8 l7 container " style=" padding-left: 70px;">
+                    <h1 class="flow-text white-text" style="font-size: 65px; margin-bottom: 80px; font-weight: bolder;">hola ! I'm   <span class="blue-text darken-5" id="dynamic-shading">  Atharva</span> </h1>
+                    <script>
+  const element = document.getElementById("dynamic-shading");
+  const text = element.innerText;
+  element.innerHTML = ""; // Clear original text
+
+  // Loop through each letter to wrap and color it
+  text.split("").forEach((letter, index) => {
+    const span = document.createElement("span");
+    span.innerText = letter;
+    
+    /* 
+      HSL breakdown: 
+      200 = Blue hue
+      100% = Full saturation
+      Lightness scales down from 70% to 30% depending on the letter position
+    */
+    const lightness = 70 - (index * 6); 
+    span.style.color = `hsl(200, 100%, ${lightness}%)`;
+    
+    element.appendChild(span);
+  });
+</script>
+                    <span class="flow-text grey-text " style="font-size: x-large;">Full.Stack.Devleoper.DSA.Java.JavaScript. <br>SQL.NodeJs.React.MERN </span> <br>
+                    <div class="row flow-text white-text" style="margin-top: 50px;" >
+                        <!-- <li class="collection-header flow-text"></li>
+                    <li class="flow-text"></li> -->
+                        <div class="col s12"> <i class="material-icons blue-text">call</i> +91
+                            8605458065</div> 
+                        <div class="col s12"> <i class="material-icons">email</i>
+                            Atharvauttarwar@gmail.com</div>
+                        <div class="col s12"> <i class="material-icons">place</i> Mumbai , India
+                        </div>
+
+                        
+                    </div>
+                    <div class="" style="">
+                        <a href="https://www.linkedin.com/in/atharva-uttarwar-1706441ba/"  ><img src="img/l2.png" class="icons" style="height: 35px; margin-right: 25px; background-color: black; border-radius: 7px; transition: transform 0.3s ease; " alt=""></a> 
+                        <!-- <i class="material-icons small ">github</i> -->
+                        <a href="https://github.com/Atharvau171" class=" icons"><img src="img/git.png" class="icons" style="height: 35px; margin-right: 25px; background-color: #fff; border-radius: 7px; transition: transform 0.3s ease; " alt=""></a>
+                        <!-- <i class="material-icons small left">linkedin</i> -->
+                        <a href="https://leetcode.com/u/atharva171/" class=" icons" ><img src="img/leet.png" class="icons" style="height: 35px; background-color: #fff; border-radius: 7px; transition: transform 0.3s ease; " alt=""></a>
+                        
+                    </div>
+                </div>
+                <!-- <div class="col "></div> -->
+                <div class="col s12 m4 l5 container center-align">
+                    <img src="img/photo.jpg" alt=""
+                        style="height: 400px; width: 400px; border-radius: 50% ; align-items: center; border: 5px solid; border-color: aqua;"
+                        class="larger"> <!--border-->
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="" style="height: 50vh;">
+            <div class=" center-align">
+                <h1 class="flow-text card-title blue-text darken-4"
+                    style="text-align: center;font-size:xx-large;font-weight: bold;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 60px;">
+                    About Me</h1>
+                <!-- <blockquote> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima velit officia accusamus quo esse, quidem nihil eaque eligendi rem hic? Velit aliquid incidunt quam. Reiciendis id laudantium corrupti consectetur impedit.</blockquote> -->
+                <span class="flow-text  grey-text" style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Eum similique maxime ducimus corporis doloremque ab praesentium optio quam incidunt sit
+                    perferendis, dolor repellendus, expedita sed porro enim nulla sequi asperiores. </span>
+            </div>
+        </section>
+        <!-- education  . to make it panel-->
+        <section id="education" class="black" style="border: 1px solid; border-radius: 30px; height: 110vh;">
+            <div class="center-align">
+                <h1 class="flow-text card-title blue-text darken-4"
+                    style="text-align: center; font-size: xx-large;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; font-size: 60px; font-weight: bolder;">
+                    Education</h1>
+                <div class="card card-panel white-text edbox" style="margin: 45px; border: 2px solid gray; transition: border-color 0.3s ease;  background-color: #080134; border-radius: 20px;">
+                    <h5>VeerMata Jijabai Institute Of Technology (VJTI) , Mumbai</h5>
+                    <span class="cyan-text">Master's In Computer Application</span><br>
+                    <span class="grey-text ">2025 - 27</span>
+                    <p class="grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ipsam nam laboriosam
+                        aperiam, officiis eveniet nemo odio voluptatem saepe modi sint dolorem quam praesentium veniam
+                        deserunt esse. Laborum, illo unde? </p>
+                </div>
+
+                <div class="card card-panel white-text edbox" style="margin: 45px; border: 2px solid gray; transition: border-color 0.3s ease; background-color:#080134; border-radius: 20px;">
+                    <h5>Vishwabharati Mahavidhyalaya Nanded </h5>
+                    <span class="cyan-text">Bachelor's In Computer Science</span><br>
+                    <span class="grey-text ">2022 - 25</span>
+                    <p class="grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ipsam nam laboriosam
+                        aperiam, officiis eveniet nemo odio voluptatem saepe modi sint dolorem quam praesentium veniam
+                        deserunt esse. Laborum, illo unde? </p>
+                </div>
+                <div class="card card-panel white-text edbox" style="margin: 45px; border: 2px solid gray; transition: border-color 0.3s ease; background-color: #080134; border-radius: 20px;">
+                    <h5 >Yeshwant College Nanded </h5>
+                    <span class="cyan-text">Class XII | 95.67%</span><br>
+                    <span class="grey-text ">2020 - 21</span>
+                    <!-- <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quas, ea ab sit nisi est necessitatibus quo similique maiores voluptate iure quasi, autem ipsam adipisci facere aut eum, ducimus blanditiis!</blockquote> -->
+                </div>
+
+            </div>
+        </section>
+        <!-- skills -->
+        <section id="skills" class="">
+
+            <div class="center-align " style="">
+                <h2 class="flow-text card-title blue-text darken-4"
+                    style="font-weight:bold;font-size: 50px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Skills</h2>
+                <div class="row white-text" style="margin-top: 0;">
+                    
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box"> Html</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box"> CSS</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">JS</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">react</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">Java</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">sql</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">Python</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">MongoDb </div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">github</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">Nodejs </div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">express</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">javaScript</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">Os</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">DBMS</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">OOPS</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">DSA </div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">R</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">AI </div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">VScode</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box"> ML</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">linux</div>
+                        </div>
+                        <div class="col s5 m3 l2 xl3 ">
+                            <div class="box">figma</div>
+                        </div>
+                    
+                </div>
+
+        </section>
+        <!-- projects -->
+        <section id="projects" class=" " style="height: 250vh;">
+            <h2 class="flow-text blue-text darken-4"
+                style="font-weight:bold;font-size: 50px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center;">
+                projects</h2>
+            <div class="card p1" style="height:70vh; border: 3px solid; border-radius: 15px; border-color: grey;background-color: #111827; transition: ease; margin-bottom: 50px;">
+                <div class="row " style="">
+                    <div class="col s12 m6 white-text">
+                        <h4 class="blue-text darken-4" style="font-weight:400;"> Lunar Landing System</h4>
+                        <h6 class="grey-text">Mca minor project</h6><br>
+                        <span style="margin-top: 10px;">Developed an AI-powered Lunar/Martian Landing System that
+                            analyzes planetary surface images to detect obstacles, classify terrain, and identify safe
+                            landing zones using computer vision and machine learning techniques.</span><br>
+                        <ul style="list-style-type:square; padding-left:" class="">
+                            <li>-> Built using Python, OpenCV, YOLO, Scikit-learn, Pandas, and Matplotlib.</li><br>
+                            <li>-> Detected rocks, craters, and hazardous terrain using YOLO object detection.</li> <br>
+                            <li>-> Processed planetary images with OpenCV for feature extraction and analysis.</li><br>
+                            <li>-> Applied clustering and classification algorithms to identify safe landing regions.
+                            </li><br>
+                            <li>-> Visualized landing site suitability and terrain statistics through interactive plots
+                                and dashboards.</li><br>
+                        </ul>
+                        <div><span class="tbox1"> ai </span> <span class="tbox1"> ml </span><span class="tbox1"> pandas
+                            </span><span class="tbox1"> matplotlib </span> <span class="tbox1"> dash </span></div>
+                    </div>
+                    <div class="col s12 m6 " style="align-items: center;">
+                        <img src="img/lunar.png" alt="" class="responsive-img pimg"
+                            style="display:block; align-items: center; ; margin-top: 25%; border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+            <div class="card p2" style="height:70vh; border: 3px solid; border-radius: 15px; border-color: grey; background-color: #111827;">
+                <div class="row valign-wrapper">
+                    <div class="col s6 white-text">
+                        <h4 class="purple-text darken-4"> Habit Tracker</h4>
+                        <h6 class="grey-text">Mca minor project</h6><br>
+                        <span> Created a full-stack Habit Tracker application that helps users build and monitor daily
+                            habits with real-time progress tracking and cloud-based data storage</span><br>
+                        <ul style="">
+                            <li>->Developed responsive user interface using React.js.</li><br>
+                            <li>->Integrated Firebase Authentication for secure user login and registration.</li><br>
+                            <li>->Stored and synchronized habit data in Firebase Firestore.</li><br>
+                            <li>->Implemented streak tracking, habit completion status, and progress monitoring.</li>
+                            <br>
+                            <li>->Enabled real-time updates across devices using Firebase services.</li><br>
+                        </ul>
+                        <div class=""><span class="tbox2 "> React </span><span class="tbox2"> vite </span><span class="tbox2">
+                                Firebase </span><span class="tbox2"> Firestore </span></div>
+                        <!--add box <span class="tbox2 " style="padding: 20px;margin-top: 40px; width: 130px; border-radius: 20px;">Live Demo</span> -->
+                    </div>
+                    <div class="col s6 " style="align-items: center;">
+                        <img src="img/habit.png" alt="" class="responsive-img pimg"
+                            style="display:block; align-items: center; margin-left: 10%; margin-top: 13%; height: 400px; width: 450px; border-radius: 50px;">
+                    </div>
+                </div>
+            </div>
+            <div class="card p3" style="height:70vh; border: 3px solid; border-radius: 15px; border-color: grey; background-color: #111827;">
+                <div class="row valign-wrapper white-text">
+                    <div class="col s6 ">
+                        <h4 class="green-text"> Porfolio Website</h4>
+                        <!-- <h6>Mca minor project</h6> -->
+                        <span class="">Designed and developed a personal portfolio website showcasing projects,
+                            technical skills, achievements, and contact information with a modern responsive
+                            interface.</span><br>
+                        <ul style="list-style-type: disc;" class="left">
+                            <li>->Built using HTML, CSS, JavaScript, and Materialize CSS framework.</li> <br>
+                            <li>->Created fully responsive layouts for desktop, tablet, and mobile devices.</li> <br>
+                            <li>->Showcased projects, skills, certifications, and professional achievements.</li> <br>
+                            <li>->Implemented Material Design components for enhanced user experience.</li> <br>
+                            <li>->Optimized website performance, navigation, and visual presentation.</li> <br> <br>
+
+                            <span class="tbox3"> Html </span><span class="tbox3"> Materialise Css </span>
+                        </ul>
+
+                    </div>
+                    <div class="col s6 " style="align-items: center;">
+                        <img src="img/port.png" alt="" class="responsive-img pimg"
+                            style="display:block; align-items: center; margin-top: 20%;">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- achievements -->
+        <section id="achievements" class="center-align " style="height: 100vh; border: 1px solid ; border-radius: 30px; ">
+            <h2 class="flow-text blue-text darken-4"style="font-weight:bold;font-size: xx-large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Certificates & Achievements</h2>
+            
+
+            <div class="carousel carousel-slider center red " style="height: 600px;">
+                <div class="carousel-fixed-item center ">
+                    <a class="btn waves-effect white grey-text darken-text-2" onclick="openPdfModal()">View Doc <i class="material-icons">description</i> </a>
+                    <div id="pdfModal" style="display: none; position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7); z-index:999;">
+                        <div style="position: relative; width: 90%; height: 90%; margin: 5%; background: #fff; padding: 20px;">
+                            <i class="material-icons" onclick="closePdfModal()" style="position: absolute; top: -30px; right: 0;color: #fff; background: none;font-size: 20px;cursor: pointer; border: none;">close</i>
+                            <iframe id="pdfFrame" width="100%" height="100%" style="border: none;" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <script>
+                        function openPdfModal() {
+                            document.getElementById('pdfFrame').src ="img/cert.pdf#toolbar=0";
+                            document.getElementById('pdfModal').style.display ="block";
+                        }
+                        function closePdfModal() {
+                            document.getElementById('pdfModal').style.display="none";
+                            document.getElementById('pdfFrame').src = "";
+                        }
+                    </script>
+                    <!-- <iframe src="img/info.pdf" frameborder="0" style="border: none;"height: 400px;width: 100%; >doc</iframe> -->
+                </div>
+                <a class="carousel-item red white-text " href=""><img src="img/i.jpg" alt="" style="height: 550px; width: 100%;"></a> <!-- width="300" onclick="showImage('images/certificate1.jpg')" class="modal-trigger" href="#imgModal" -->
+                <a class="carousel-item amber white-text " href=""><img src="img/ii.png" alt="" style="height: 550px; width: 100%;"></a>
+                <a class="carousel-item blue white-text " href=""><img src="img/h.jpg" alt=""  style="height: 550px; width: 100%;"></a>
+                <!-- <a class="carousel-item pink white-text " href=""><img src="img/photo.jpg" alt="" style="height: 550px; width: 100%"></a> -->
+
+            </div>
+
+        </section>
+        <!-- contacts -->
+        <section id="contacts" class=" center-align " style="height: 65vh;">
+            <h2 class="blue-text darken-4" style="font-size: 40px; font-weight: bolder; ">contact</h2>
+            <div class="card" style="border: 2px solid; border-radius: 20px; background-color: #111827;">
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col s6">
+                        <input type="text" placeholder="  your name" style="border: 1px solid grey; border-radius: 12px; background-color:black; color: #fff;">
+                    </div>
+                    <div class="col s6">
+                        <input type="text" placeholder="  your email" style="border: 1px solid grey; border-radius: 12px; background-color: black;color: #fff;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <input type="text" placeholder="  phone number" style="border: 1px solid grey; border-radius: 12px; background-color: black;color: #fff;">
+                    </div>
+                    <div class="col s6">
+                        <input type="text" placeholder="  subject" style="border: 1px solid grey; border-radius: 12px; background-color: black;color: #fff;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 input-field ">
+                        <label for="inputmessage" style="color: white !important;"> Your message</label>
+                        <textarea name="message" id="inputmessage" style="border: 1px solid grey; border-radius: 12px;height: 150px; background-color: black;color: #fff;"></textarea>
+                    </div>
+                </div>
+                <span class="btn" style="width: 90% ;border: 1px solid grey; border-radius: 12px; margin: 10px;">send message</span>
+
+            </div>
+            <footer>
+                <span class="white-text"> all rights reserve @ 2026 atharva in guidance with shaktiraj pr</span>
+            </footer>
+        </section>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="/Users/atharvasanjayuttarwar/Desktop/IYF/Portfolio/js/materialize.min.js"></script> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    M.Carousel.init(elems, {
+        fullWidth: true,
+        indicators: true
+    });
+});
+
+const navbar = document.querySelector('.navbar');
+
+// Define the scroll distance (in pixels) over which the full fade should happen
+const maxScroll = 300; 
+
+window.addEventListener('scroll', () => {
+  window.requestAnimationFrame(() => {
+    // Clamp the value between 0 and 1
+    const alpha = Math.min(window.scrollY / maxScroll, 1);
+    
+    // Dynamically update the opacity of the navbar gradient background
+    navbar.style.backgroundColor = `rgba(26, 26, 26, ${alpha})`;
+    navbar.style.backgroundBlendMode = 'multiply';
+  });
+});
+
+const progressBar = document.querySelector('.scroll-progress-bar');
+
+window.addEventListener('scroll', () => {
+  window.requestAnimationFrame(() => {
+    // Total height of the page minus the visible viewport height
+    const totalScrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+    
+    // Prevent division by zero errors on short pages
+    const scrollPercentage = totalScrollableHeight > 0 
+      ? (window.scrollY / totalScrollableHeight) * 100 
+      : 0;
+    
+    // Apply percentage directly to width property
+    progressBar.style.width = `${scrollPercentage}%`;
+  });
+});
+    </script>
+
+</body>
+
+</html>
