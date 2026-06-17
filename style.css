@@ -1,0 +1,152 @@
+/* height to each sections */
+#home , #education ,#skills ,#projects ,#achievements ,#contact {
+    height: 100vh;
+    width: 100%;
+}
+/* skills boxes */
+.box{
+    margin: 10px 0px;
+    margin-top: 10px;
+    /* align-items: center; */
+    padding: 25px;
+      text-align: center;
+      background-image: linear-gradient(to bottom right, #2b2727, #010101);
+      
+      border: 2px solid gray;
+      border-radius: 15px;
+      /* border-spacing: 20px; */
+      height: 80px;
+      /* width: 250px; */
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: larger;
+      
+}
+.box:hover {
+    transform: scale(1.05) !important ;
+    border-color: #00f0ff !important ;
+}
+.btn:hover {
+    transform: scale(1.1);
+    transition:ease 0.3;
+}
+/* project boxes */
+.tbox1{  
+    max-width: 500px;
+    width: 100%;
+
+    padding: 10px;
+    margin: 20px auto;
+
+    background-color:#5d6fa9;
+    color: #fdfafa;
+
+    border: 1px solid rgb(67, 83, 251);
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgb(0,0,0,0.5);
+
+    margin-right: 16px;
+}
+.tbox2{
+    max-width: 500px;
+    width: 100%;
+
+    padding: 10px;
+    margin: 20px auto;
+
+    background-color:#a3759e;
+    color: #fdfafa;
+
+    border: 1px solid rgb(248, 76, 208);
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgb(0,0,0,0.5);
+
+    margin-right: 16px;
+}
+.tbox3{
+    max-width: 500px;
+    width: 100%;
+
+    padding: 10px;
+    margin: 20px auto;
+
+    background-color:#6a9177;
+    color: #fdfafa;
+
+    border: 1px solid rgb(87, 250, 125);
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgb(0,0,0,0.5);
+
+    margin-right: 16px;
+}
+.p1:hover{
+    border-color: rgb(25, 93, 250) !important;
+}
+.p2:hover{
+    border-color: rgb(248, 50, 179) !important;
+}
+.p3:hover{
+    border-color: rgb(41, 249, 110) !important;
+}
+#achievements {
+    overflow: visible !important;
+}
+.carousel.carousel-slider {
+    height: 600px !important;
+    color: blue;
+}
+
+.carousel-item {
+    min-height: 400px;
+}
+/* navbar */
+.navbar.scrolled {
+  background-color:linear-gradient(135deg, #121212 0%, #1c1c1e 100%); /* Changes to solid dark color on scroll */
+  padding: 15px 40px;        /* Optional: shrinks navbar slightly */
+  box-shadow: 0 4px 10px rgba(26, 26, 26, 0); 
+}
+.scroll-progress-bar {
+  position:relative;
+  bottom: 0;
+  left: 0;
+  height: 4px; /* Thickness of the bar */
+  width: 0%;   /* Initial state */
+    background: linear-gradient(to right, #ff007f 0%, #7000ff 50%, #00f0ff 100%);
+    /* background: linear-gradient(to right, #ff2f00 0%, #fbff00 50%, #3300ff 100%); */
+  will-change: width;
+}
+.icons:hover {
+    transform: scale(1.2); 
+}
+
+.edbox:hover {
+    
+    border-color: #00f0ff!important ;
+}
+/* animation on website for come-out  */
+@keyframes come-out {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+#home , #education ,#skills ,#projects ,#achievements ,#contact {
+ /* Links the animation to the page scroll */
+  animation: come-out linear both;
+  animation-timeline: view();
+  
+  /* Restricts the effect to when the element enters the screen */
+  animation-range: entry 10% cover 20%;
+}
+
+.pimg:hover{
+    transform: scale(1.035) ;
+}
